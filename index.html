@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deja Vu: Guess the Number!</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div id="game-container">
+        <div id="game-headers">
+          <h1 id="title">Guessy</h1>
+          <h3 id="sub-title">A Number Guessing Game</h3>
+        </div>
+        <div id="game-action">
+            <p id="feedback">Guess a whole number between 1 and 100 (click Start to begin)</p>
+            <input type="text" name="guess" id="guess" disabled />
+            <div id="game-buttons">
+                <button id="guess-btn">Start</button>
+                <button id="quit-btn">Reset</button>
+            </div>
+        
+        <div id="game-info">
+          <div id="scores">
+            <div class="score-flex">
+              <h4>Best</h4>
+              <p id="highscore">0</p>
+            </div>
+            <div class="score-flex">
+              <h4>Current</h4>
+              <p id="currentscore">0</p>
+            </div>
+         </div>
+        
+            
+            <p id="history">-</p>
+            <p id="time">00:00:00</p>
+        </div>    
+        
+        </div>
+      </div>
+    </main>
+
     <script src="app.js"></script>
-</head>
-<body>
-    <h1>Guess the Number!</h1>
-</body>
+  </body>
 </html>
